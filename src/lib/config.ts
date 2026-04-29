@@ -1,6 +1,6 @@
 export const SITE = {
-  name: 'Kloster Paisajista & Jardineria',
-  tagline: 'Tranquilidad y Confianza en cada rincon',
+  name: 'Kloster Soluciones',
+  tagline: 'Tranquilidad y confianza en cada rincon',
   city: 'Bahia Blanca',
   // Configurar cuando este listo:
   whatsapp: '5492954212121',

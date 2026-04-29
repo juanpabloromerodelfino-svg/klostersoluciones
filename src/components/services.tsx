@@ -2,59 +2,45 @@ import { SERVICES, SITE } from '@/lib/config'
 
 export function Services() {
   return (
-    <section id="servicios" className="bg-white py-20 sm:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="text-center">
-          <span className="text-sm font-semibold uppercase tracking-wider text-green-600">
-            Nuestros Servicios
-          </span>
-          <h2 className="mt-2 font-heading text-3xl font-bold text-green-900 sm:text-4xl">
-            Cuidamos tu jardin como si fuera nuestro
+    <section id="servicios" className="py-24 sm:py-32">
+      <div className="mx-auto max-w-6xl px-5">
+        <div className="max-w-2xl">
+          <p className="text-sm font-medium text-green-700">Servicios</p>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
+            Todo lo que tu jardin necesita
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-brown-600">
-            Ofrecemos soluciones completas de jardineria y paisajismo en{' '}
-            {SITE.city}. Desde el corte semanal hasta el diseno integral de tu
-            espacio verde.
+          <p className="mt-4 text-base leading-relaxed text-neutral-500">
+            Soluciones completas de jardineria y paisajismo en Bahia Blanca.
+            Desde el corte semanal hasta el diseno integral de tu espacio verde.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service) => (
-            <article
+            <a
               key={service.id}
-              className="group rounded-2xl border border-green-100 bg-green-50/50 p-8 transition-all hover:border-green-300 hover:shadow-lg"
+              href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(`Hola! Me interesa el servicio de ${service.title}.`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group rounded-xl border border-neutral-200 p-6 transition-all hover:border-green-200 hover:bg-green-50/50"
             >
-              <div className="mb-4 text-4xl">{service.icon}</div>
-              <h3 className="font-heading text-xl font-bold text-green-900">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-50 text-xl group-hover:bg-green-100">
+                {service.icon}
+              </div>
+              <h3 className="mt-4 text-base font-semibold text-neutral-900">
                 {service.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-brown-600">
+              <p className="mt-2 text-sm leading-relaxed text-neutral-500">
                 {service.description}
               </p>
-              <a
-                href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(`Hola! Me interesa el servicio de ${service.title}.`)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-green-700 transition-colors group-hover:text-green-600"
-              >
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-green-700 opacity-0 transition-opacity group-hover:opacity-100">
                 Consultar
-                <svg
-                  className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 5l7 7-7 7"
-                  />
+                <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
-              {/* Hidden SEO text */}
+              </span>
               <p className="sr-only">{service.seoText}</p>
-            </article>
+            </a>
           ))}
         </div>
       </div>

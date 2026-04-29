@@ -2,11 +2,11 @@ import { TESTIMONIALS } from '@/lib/config'
 
 function Stars({ count }: { count: number }) {
   return (
-    <div className="flex gap-1">
+    <div className="flex gap-0.5">
       {Array.from({ length: 5 }).map((_, i) => (
         <svg
           key={i}
-          className={`h-5 w-5 ${i < count ? 'text-yellow-400' : 'text-gray-300'}`}
+          className={`h-4 w-4 ${i < count ? 'text-green-600' : 'text-neutral-200'}`}
           fill="currentColor"
           viewBox="0 0 20 20"
         >
@@ -19,36 +19,33 @@ function Stars({ count }: { count: number }) {
 
 export function Testimonials() {
   return (
-    <section id="testimonios" className="bg-green-900 py-20 sm:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="text-center">
-          <span className="text-sm font-semibold uppercase tracking-wider text-green-400">
-            Testimonios
-          </span>
-          <h2 className="mt-2 font-heading text-3xl font-bold text-white sm:text-4xl">
+    <section id="testimonios" className="border-t border-neutral-100 bg-neutral-50 py-24 sm:py-32">
+      <div className="mx-auto max-w-6xl px-5">
+        <div className="max-w-2xl">
+          <p className="text-sm font-medium text-green-700">Testimonios</p>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
             Lo que dicen nuestros clientes
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-green-200">
-            La confianza se construye con trabajo bien hecho. Estas son las
-            opiniones de quienes ya eligieron Kloster.
+          <p className="mt-4 text-base leading-relaxed text-neutral-500">
+            La confianza se construye con trabajo bien hecho.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {TESTIMONIALS.map((t, i) => (
             <blockquote
               key={i}
-              className="rounded-2xl bg-white/10 p-8 backdrop-blur-sm"
+              className="rounded-xl border border-neutral-200 bg-white p-6"
             >
               <Stars count={t.rating} />
-              <p className="mt-4 text-base leading-relaxed text-green-100">
+              <p className="mt-4 text-sm leading-relaxed text-neutral-600">
                 &ldquo;{t.text}&rdquo;
               </p>
-              <footer className="mt-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-600 text-sm font-bold text-white">
+              <footer className="mt-5 flex items-center gap-3 border-t border-neutral-100 pt-4">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-green-50 text-xs font-semibold text-green-700">
                   {t.name[0]}
                 </div>
-                <span className="text-sm font-medium text-green-300">
+                <span className="text-sm font-medium text-neutral-700">
                   {t.name}
                 </span>
               </footer>

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Kloster Paisajista & Jardineria - Bahia Blanca',
+  title: 'Kloster Soluciones - Jardineria Profesional en Bahia Blanca',
   description:
     'Servicio profesional de jardineria, corte de cesped, mantenimiento de jardines, podas y diseno de espacios verdes en Bahia Blanca. Confianza y compromiso en cada rincon.',
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'limpieza de terrenos Bahia Blanca',
   ],
   openGraph: {
-    title: 'Kloster Paisajista & Jardineria - Bahia Blanca',
+    title: 'Kloster Soluciones - Jardineria Profesional en Bahia Blanca',
     description:
       'Servicio profesional de jardineria en Bahia Blanca. Confianza y compromiso en cada rincon.',
     type: 'website',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'Kloster Paisajista & Jardineria',
+  name: 'Kloster Soluciones',
   description:
     'Servicio profesional de jardineria, corte de cesped, mantenimiento de jardines, podas y diseno de espacios verdes en Bahia Blanca.',
   areaServed: {
@@ -69,7 +69,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
           rel="stylesheet"
         />
         <script
@@ -77,7 +77,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-body bg-cream-50 text-brown-800 antialiased">
+      <body className="font-sans bg-white text-neutral-900 antialiased">
         {children}
       </body>
     </html>
