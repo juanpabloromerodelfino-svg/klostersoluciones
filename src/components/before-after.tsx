@@ -2,21 +2,21 @@ export function BeforeAfter() {
   const works = [
     {
       id: 1,
-      title: 'Jardin residencial',
+      title: 'Jardín residencial',
       zone: 'Barrio Palihue',
-      description: 'Desmalezado completo, diseno de canteros y sistema de riego.',
+      description: 'Desmalezado completo, diseño de canteros y sistema de riego.',
     },
     {
       id: 2,
       title: 'Poda de altura',
       zone: 'Centro',
-      description: 'Poda sanitaria y de formacion en arboles de mas de 8 metros.',
+      description: 'Poda sanitaria y de formación en árboles de más de 8 metros.',
     },
     {
       id: 3,
       title: 'Parquizado completo',
       zone: 'Barrio Patagonia',
-      description: 'Limpieza de terreno, cesped, canteros e iluminacion.',
+      description: 'Limpieza de terreno, césped, canteros e iluminación.',
     },
   ]
 
@@ -26,11 +26,11 @@ export function BeforeAfter() {
         <div className="max-w-2xl">
           <p className="text-sm font-medium text-green-700">Trabajos realizados</p>
           <h2 className="mt-2 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
-            Antes y despues
+            Antes y después
           </h2>
           <p className="mt-4 text-base leading-relaxed text-neutral-500">
-            Nuestros resultados hablan por si solos. Algunos de los jardines que
-            transformamos en Bahia Blanca.
+            Nuestros resultados hablan por sí solos. Algunos de los jardines que
+            transformamos en Bahía Blanca.
           </p>
         </div>
 
@@ -46,15 +46,15 @@ export function BeforeAfter() {
                     <span className="inline-block rounded-md bg-neutral-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-neutral-600">
                       Antes
                     </span>
-                    <p className="mt-2 text-[11px] text-neutral-400">Foto proximamente</p>
+                    <p className="mt-2 text-[11px] text-neutral-400">Foto próximamente</p>
                   </div>
                 </div>
                 <div className="flex aspect-[4/3] items-center justify-center bg-green-50 p-4">
                   <div className="text-center">
                     <span className="inline-block rounded-md bg-green-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-green-700">
-                      Despues
+                      Después
                     </span>
-                    <p className="mt-2 text-[11px] text-neutral-400">Foto proximamente</p>
+                    <p className="mt-2 text-[11px] text-neutral-400">Foto próximamente</p>
                   </div>
                 </div>
               </div>

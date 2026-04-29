@@ -7,11 +7,11 @@ export function Services() {
         <div className="max-w-2xl">
           <p className="text-sm font-medium text-green-700">Servicios</p>
           <h2 className="mt-2 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
-            Todo lo que tu jardin necesita
+            Todo lo que tu jardín necesita
           </h2>
           <p className="mt-4 text-base leading-relaxed text-neutral-500">
-            Soluciones completas de jardineria y paisajismo en Bahia Blanca.
-            Desde el corte semanal hasta el diseno integral de tu espacio verde.
+            Soluciones completas de jardinería y paisajismo en Bahía Blanca.
+            Desde el corte semanal hasta el diseño integral de tu espacio verde.
           </p>
         </div>
 
@@ -19,7 +19,7 @@ export function Services() {
           {SERVICES.map((service) => (
             <a
               key={service.id}
-              href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(`Hola! Me interesa el servicio de ${service.title}.`)}`}
+              href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(`¡Hola! Me interesa el servicio de ${service.title}.`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="group rounded-xl border border-neutral-200 p-6 transition-all hover:border-green-200 hover:bg-green-50/50"

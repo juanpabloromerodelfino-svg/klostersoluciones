@@ -2,7 +2,7 @@ export function About() {
   const values = [
     {
       title: 'Confianza',
-      description: 'Te abris la puerta de tu casa tranquilo.',
+      description: 'Te abrís la puerta de tu casa tranquilo.',
       icon: (
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
@@ -11,7 +11,7 @@ export function About() {
     },
     {
       title: 'Puntualidad',
-      description: 'Llegamos cuando dijimos que ibamos a llegar.',
+      description: 'Llegamos cuando dijimos que íbamos a llegar.',
       icon: (
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -29,7 +29,7 @@ export function About() {
     },
     {
       title: 'Prolijidad',
-      description: 'Nos vamos y tu jardin queda impecable.',
+      description: 'Nos vamos y tu jardín queda impecable.',
       icon: (
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
@@ -50,11 +50,11 @@ export function About() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-neutral-500">
               <p>
-                Sabemos que cuando nos contratas, nos estas abriendo las puertas
+                Sabemos que cuando nos contratás, nos estás abriendo las puertas
                 de tu casa. Eso para nosotros no es menor.
               </p>
               <p>
-                Somos de Bahia Blanca y trabajamos en toda la ciudad. Lo que nos
+                Somos de Bahía Blanca y trabajamos en toda la ciudad. Lo que nos
                 diferencia es simple:{' '}
                 <strong className="font-medium text-neutral-700">
                   hacemos lo que prometemos
@@ -87,7 +87,7 @@ export function About() {
                 </svg>
               </div>
               <p className="text-sm text-neutral-400">Foto del equipo</p>
-              <p className="mt-1 text-xs text-neutral-300">Proximamente</p>
+              <p className="mt-1 text-xs text-neutral-300">Próximamente</p>
             </div>
           </div>
         </div>

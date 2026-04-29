@@ -12,10 +12,10 @@ export function Contact() {
     const service = data.get('service') as string
     const message = data.get('message') as string
 
-    const lines = [`Hola! Soy ${name}.`]
+    const lines = [`¡Hola! Soy ${name}.`]
     if (service) lines.push(`Me interesa: ${service}.`)
     if (message) lines.push(message)
-    if (phone) lines.push(`Mi telefono: ${phone}`)
+    if (phone) lines.push(`Mi teléfono: ${phone}`)
 
     const text = lines.join('\n')
     window.open(
@@ -35,7 +35,7 @@ export function Contact() {
               Pedi tu presupuesto
             </h2>
             <p className="mt-4 text-base leading-relaxed text-neutral-500">
-              Escribinos por WhatsApp o completa el formulario.
+              Escribinos por WhatsApp o completá el formulario.
               Respondemos en menos de 24 horas. Sin cargo.
             </p>
 
@@ -66,7 +66,7 @@ export function Contact() {
                 </div>
                 <div>
                   <span className="block text-sm font-medium text-neutral-900">Zona de cobertura</span>
-                  <span className="text-xs text-neutral-500">Toda Bahia Blanca y alrededores</span>
+                  <span className="text-xs text-neutral-500">Toda Bahía Blanca y alrededores</span>
                 </div>
               </div>
             </div>
@@ -93,14 +93,14 @@ export function Contact() {
               </div>
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-neutral-700">
-                  Telefono
+                  Teléfono
                 </label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
                   className="mt-1.5 w-full rounded-lg border border-neutral-200 bg-neutral-50 px-3.5 py-2.5 text-sm text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-green-500 focus:bg-white focus:ring-1 focus:ring-green-500"
-                  placeholder="Tu numero"
+                  placeholder="Tu número"
                 />
               </div>
               <div>
@@ -112,13 +112,13 @@ export function Contact() {
                   name="service"
                   className="mt-1.5 w-full rounded-lg border border-neutral-200 bg-neutral-50 px-3.5 py-2.5 text-sm text-neutral-900 outline-none transition-colors focus:border-green-500 focus:bg-white focus:ring-1 focus:ring-green-500"
                 >
-                  <option value="">Selecciona un servicio</option>
-                  <option value="Corte de Cesped">Corte de Cesped</option>
+                  <option value="">Seleccioná un servicio</option>
+                  <option value="Corte de Césped">Corte de Césped</option>
                   <option value="Mantenimiento de Jardines">Mantenimiento de Jardines</option>
-                  <option value="Poda de Arboles">Poda de Arboles</option>
+                  <option value="Poda de Árboles">Poda de Árboles</option>
                   <option value="Desmalezado y Limpieza">Desmalezado y Limpieza</option>
                   <option value="Sistemas de Riego">Sistemas de Riego</option>
-                  <option value="Diseno de Jardines">Diseno de Jardines</option>
+                  <option value="Diseño de Jardines">Diseño de Jardines</option>
                   <option value="Otro">Otro</option>
                 </select>
               </div>
@@ -131,7 +131,7 @@ export function Contact() {
                   name="message"
                   rows={3}
                   className="mt-1.5 w-full rounded-lg border border-neutral-200 bg-neutral-50 px-3.5 py-2.5 text-sm text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-green-500 focus:bg-white focus:ring-1 focus:ring-green-500"
-                  placeholder="Contanos que necesitas..."
+                  placeholder="Contanos qué necesitás..."
                 />
               </div>
               <button

@@ -10,7 +10,7 @@ export function Affiliates() {
             Lo que usamos y recomendamos
           </h2>
           <p className="mt-4 text-base leading-relaxed text-neutral-500">
-            Despues de anos probando, estos son los productos que realmente
+            Después de años probando, estos son los productos que realmente
             funcionan.
           </p>
         </div>
@@ -46,8 +46,8 @@ export function Affiliates() {
         </div>
 
         <p className="mt-8 text-xs text-neutral-400">
-          Algunos links pueden contener enlaces de afiliados. Si compras a
-          traves de ellos, nos ayudas a seguir mejorando sin costo extra para
+          Algunos links pueden contener enlaces de afiliados. Si comprás a
+          través de ellos, nos ayudás a seguir mejorando sin costo extra para
           vos.
         </p>
       </div>

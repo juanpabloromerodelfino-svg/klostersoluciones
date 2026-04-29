@@ -12,19 +12,19 @@ export function Hero() {
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-900 px-3 py-1">
             <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
             <span className="text-xs font-medium text-neutral-400">
-              Jardineria profesional en {SITE.city}
+              Jardinería profesional en {SITE.city}
             </span>
           </div>
 
           <h1 className="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Tu jardin en las
+            Tu jardín en las
             <br />
             <span className="text-green-400">mejores manos</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-400">
-            Nos abris la puerta de tu casa y cumplimos. Corte, mantenimiento,
-            podas, diseno — todo lo que tu espacio verde necesita.
+            Nos abrís la puerta de tu casa y cumplimos. Corte, mantenimiento,
+            podas, diseño — todo lo que tu espacio verde necesita.
           </p>
 
           {/* CTAs */}
@@ -51,7 +51,7 @@ export function Hero() {
           {/* Stats */}
           <div className="mt-16 flex gap-10 border-t border-neutral-800 pt-8">
             {[
-              { value: '+5', label: 'Anos de experiencia' },
+              { value: '+5', label: 'Años de experiencia' },
               { value: '+200', label: 'Jardines cuidados' },
               { value: '100%', label: 'Compromiso' },
             ].map((stat) => (
@@ -73,7 +73,7 @@ export function Hero() {
                     <path d="M8 5v14l11-7z" />
                   </svg>
                 </div>
-                <p className="text-xs text-neutral-500">Video de presentacion</p>
+                <p className="text-xs text-neutral-500">Video de presentación</p>
               </div>
             </div>
           </div>

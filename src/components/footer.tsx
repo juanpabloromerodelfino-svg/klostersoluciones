@@ -35,7 +35,7 @@ export function Footer() {
 
         <div className="mt-8 flex flex-col items-start justify-between gap-4 border-t border-neutral-100 pt-8 text-xs text-neutral-400 sm:flex-row sm:items-center">
           <p>&copy; {year} {SITE.name}. Todos los derechos reservados.</p>
-          <p>Jardineria profesional en {SITE.city}</p>
+          <p>Jardinería profesional en {SITE.city}</p>
         </div>
       </div>
     </footer>
